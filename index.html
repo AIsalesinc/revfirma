@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RevFirma — Control all digital attention inside real-world locations.</title>
+  <meta name="description" content="RevFirma turns any bounded physical space into a managed digital perimeter. Patent-pending geo-targeted local ad technology." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --fg: #1A1A1A;
+      --bg: #FFFFFF;
+      --bg-alt: #F9F9F9;
+      --muted: #666666;
+      --dim: #AAAAAA;
+      --border: #CCCCCC;
+      --accent: #26ACE8;
+      --font-int: 'Inter', sans-serif;
+      --font-mon: 'JetBrains Mono', monospace;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: var(--font-int);
+      font-size: 16px;
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    a:hover { color: var(--accent); }
+
+    .container {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+
+    /* Nav */
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 24px 0;
+      font-family: var(--font-mon);
+      font-size: 14px;
+    }
+    .brand {
+      font-weight: 500;
+      letter-spacing: -0.01em;
+    }
+    .brand .dot { color: var(--accent); }
+    .nav-links { display: flex; gap: 28px; color: var(--muted); }
+
+    /* Buttons */
+    .btn {
+      display: inline-block;
+      font-family: var(--font-mon);
+      font-size: 14px;
+      font-weight: 500;
+      padding: 14px 22px;
+      border-radius: 99px;
+      border: 1px solid var(--fg);
+      background: var(--fg);
+      color: var(--bg);
+      transition: transform 120ms ease, background 120ms ease;
+      cursor: pointer;
+    }
+    .btn:hover { background: #000; color: var(--bg); transform: translateY(-1px); }
+    .btn-ghost {
+      background: transparent;
+      color: var(--fg);
+      border: 1px solid var(--dim);
+    }
+    .btn-ghost:hover { border-color: var(--fg); color: var(--fg); background: transparent; }
+
+    /* Hero */
+    .hero { padding: 80px 0 120px; }
+    .eyebrow {
+      font-family: var(--font-mon);
+      font-size: 13px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 24px;
+    }
+    .eyebrow .pulse {
+      display: inline-block;
+      width: 8px; height: 8px;
+      background: var(--accent);
+      border-radius: 50%;
+      margin-right: 8px;
+      vertical-align: middle;
+      animation: pulse 2s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(1.3); }
+    }
+    h1 {
+      font-family: var(--font-int);
+      font-size: clamp(40px, 6vw, 72px);
+      font-weight: 500;
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      margin: 0 0 28px;
+      max-width: 14ch;
+    }
+    h1 em {
+      color: var(--accent);
+      font-style: normal;
+    }
+    .sub {
+      font-size: 20px;
+      color: var(--muted);
+      max-width: 52ch;
+      margin: 0 0 40px;
+    }
+    .hero-ctas { display: flex; gap: 12px; flex-wrap: wrap; }
+
+    /* Sections */
+    section { padding: 96px 0; }
+    section.alt { background: var(--bg-alt); }
+    .section-label {
+      font-family: var(--font-mon);
+      font-size: 13px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 16px;
+    }
+    h2 {
+      font-family: var(--font-int);
+      font-size: clamp(28px, 3.6vw, 44px);
+      font-weight: 500;
+      line-height: 1.15;
+      letter-spacing: -0.015em;
+      margin: 0 0 24px;
+      max-width: 20ch;
+    }
+    h3 {
+      font-family: var(--font-int);
+      font-size: 22px;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      margin: 0 0 10px;
+    }
+    p.lead {
+      font-size: 18px;
+      color: var(--muted);
+      max-width: 60ch;
+    }
+
+    /* Stats strip */
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      padding: 40px 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      margin-top: 48px;
+    }
+    .stat .label {
+      font-family: var(--font-mon);
+      font-size: 12px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 8px;
+    }
+    .stat .value {
+      font-family: var(--font-int);
+      font-size: 36px;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      line-height: 1;
+    }
+
+    /* Steps */
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+      margin-top: 48px;
+    }
+    .step .num {
+      font-family: var(--font-mon);
+      font-size: 13px;
+      color: var(--accent);
+      margin-bottom: 16px;
+    }
+
+    /* Pilots */
+    .pilots {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      margin-top: 48px;
+    }
+    .pilot-card {
+      padding: 32px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      transition: border-color 200ms ease;
+    }
+    .pilot-card:hover { border-color: var(--accent); }
+    .pilot-card .tag {
+      display: inline-block;
+      font-family: var(--font-mon);
+      font-size: 11px;
+      color: var(--accent);
+      padding: 4px 10px;
+      border: 1px solid var(--accent);
+      border-radius: 99px;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+    .pilot-card .tag.live::before {
+      content: '';
+      display: inline-block;
+      width: 6px; height: 6px;
+      background: var(--accent);
+      border-radius: 50%;
+      margin-right: 6px;
+      vertical-align: middle;
+    }
+    .pilot-card p { color: var(--muted); margin: 0; }
+    .pilot-card .link {
+      display: inline-block;
+      font-family: var(--font-mon);
+      font-size: 13px;
+      color: var(--fg);
+      margin-top: 16px;
+      border-bottom: 1px solid var(--fg);
+    }
+    .pilot-card .link:hover { color: var(--accent); border-color: var(--accent); }
+
+    /* Who */
+    .who-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 32px 64px;
+      margin-top: 48px;
+    }
+    .who-item {
+      padding-left: 20px;
+      border-left: 2px solid var(--accent);
+    }
+    .who-item h4 {
+      font-family: var(--font-int);
+      font-size: 16px;
+      font-weight: 500;
+      margin: 0 0 6px;
+    }
+    .who-item p {
+      font-size: 15px;
+      color: var(--muted);
+      margin: 0;
+    }
+
+    /* Founder */
+    .founder {
+      max-width: 640px;
+    }
+    .founder-meta {
+      font-family: var(--font-mon);
+      font-size: 13px;
+      color: var(--muted);
+      margin-top: 16px;
+    }
+    .founder-meta a { color: var(--fg); border-bottom: 1px solid var(--border); }
+
+    /* CTA */
+    .cta-block {
+      background: var(--fg);
+      color: var(--bg);
+      border-radius: 16px;
+      padding: 72px 48px;
+      text-align: center;
+      margin: 0 auto;
+      max-width: 880px;
+    }
+    .cta-block h2 { color: var(--bg); margin-left: auto; margin-right: auto; }
+    .cta-block p { color: rgba(255, 255, 255, 0.7); max-width: 48ch; margin: 0 auto 32px; }
+    .cta-block .btn {
+      background: var(--bg);
+      color: var(--fg);
+      border-color: var(--bg);
+    }
+    .cta-block .btn:hover { background: var(--accent); color: var(--bg); border-color: var(--accent); }
+
+    /* Footer */
+    footer {
+      padding: 48px 0 64px;
+      border-top: 1px solid var(--border);
+      font-family: var(--font-mon);
+      font-size: 13px;
+      color: var(--muted);
+    }
+    .footer-row {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    /* Responsive */
+    @media (max-width: 720px) {
+      .nav-links { display: none; }
+      .stats { grid-template-columns: 1fr; gap: 24px; }
+      .steps { grid-template-columns: 1fr; gap: 32px; }
+      .pilots { grid-template-columns: 1fr; }
+      .who-grid { grid-template-columns: 1fr; gap: 24px; }
+      .cta-block { padding: 48px 24px; }
+      section { padding: 64px 0; }
+      .hero { padding: 40px 0 72px; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <nav class="nav">
+      <a href="/" class="brand">revfirma<span class="dot">.</span></a>
+      <div class="nav-links">
+        <a href="#how">How it works</a>
+        <a href="#pilots">Pilots</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </div>
+
+  <header class="hero">
+    <div class="container">
+      <div class="eyebrow"><span class="pulse"></span>Now live in Oklahoma</div>
+      <h1>Control <em>all digital attention</em> inside real-world locations.</h1>
+      <p class="sub">
+        RevFirma turns any bounded physical space — a town, a marina, a campus, a neighborhood — into a managed digital perimeter. Inside that perimeter, you decide what gets seen, what gets pushed, and what gets measured.
+      </p>
+      <div class="hero-ctas">
+        <a href="mailto:james@revfirma.com?subject=RevFirma%20pilot%20inquiry" class="btn">Request a pilot</a>
+        <a href="#how" class="btn btn-ghost">How it works</a>
+      </div>
+
+      <div class="stats">
+        <div class="stat">
+          <div class="label">Pilots live</div>
+          <div class="value">2</div>
+        </div>
+        <div class="stat">
+          <div class="label">Impressions / day</div>
+          <div class="value">75K</div>
+        </div>
+        <div class="stat">
+          <div class="label">Slots per zone</div>
+          <div class="value">10</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="how" class="alt">
+    <div class="container">
+      <div class="section-label">How it works</div>
+      <h2>The operating layer for physical attention.</h2>
+      <p class="lead">
+        Physical places are crawling with digital attention — phones in every pocket, notifications, feeds, ads — but nobody inside the perimeter controls it. RevFirma changes that with patent-pending geo-targeted ad infrastructure.
+      </p>
+
+      <div class="steps">
+        <div class="step">
+          <div class="num">01 / Define</div>
+          <h3>Draw the perimeter</h3>
+          <p style="color: var(--muted); margin: 0;">Geofence a venue, a town, a lakefront, a campus. We build the boundary and the targeting logic around it.</p>
+        </div>
+        <div class="step">
+          <div class="num">02 / Own</div>
+          <h3>Lock category slots</h3>
+          <p style="color: var(--muted); margin: 0;">Each zone has a fixed, category-exclusive license count. First mover wins. No auction, no competition, no waitlist.</p>
+        </div>
+        <div class="step">
+          <div class="num">03 / Measure</div>
+          <h3>See who's inside</h3>
+          <p style="color: var(--muted); margin: 0;">Live dashboard of impressions, reach, and frequency. Updated daily. No guessing at what worked.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pilots">
+    <div class="container">
+      <div class="section-label">Pilots</div>
+      <h2>Deployed in Oklahoma.</h2>
+      <p class="lead">Two live deployments, two different use cases — municipal-scale tourism and planned-community governance.</p>
+
+      <div class="pilots">
+        <div class="pilot-card">
+          <div class="tag live">Live</div>
+          <h3>Eufaula, OK</h3>
+          <p>Municipal-scale perimeter around Lake Eufaula. Up to 75,000 targeted impressions delivered daily to boaters, visitors, and locals in the Eufaula Marina zone.</p>
+          <a href="https://eufaula.revfirma.com" class="link" target="_blank" rel="noopener">eufaula.revfirma.com →</a>
+        </div>
+        <div class="pilot-card">
+          <div class="tag live">Live</div>
+          <h3>Carlton Landing, OK</h3>
+          <p>Community hub for a planned community on Lake Eufaula — news, events, dining, and governance, owned by the residents who use it.</p>
+          <a href="#contact" class="link">Ask about this deployment →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="container">
+      <div class="section-label">Who it's for</div>
+      <h2>Any place with a boundary and an audience inside it.</h2>
+
+      <div class="who-grid">
+        <div class="who-item">
+          <h4>Municipalities &amp; tourism boards</h4>
+          <p>Own the digital front door of your town. Direct visitor attention to local businesses, not national chains.</p>
+        </div>
+        <div class="who-item">
+          <h4>Planned communities &amp; HOAs</h4>
+          <p>Run your own news, events, and commerce layer — outside of Facebook groups and legacy HOA software.</p>
+        </div>
+        <div class="who-item">
+          <h4>Venues, resorts &amp; marinas</h4>
+          <p>Captive audiences deserve a captive experience. Control what gets served to the phone in every pocket on your property.</p>
+        </div>
+        <div class="who-item">
+          <h4>Event operators</h4>
+          <p>Turn a temporary perimeter into a programmable attention layer for the duration of the event.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-label">Founder</div>
+      <div class="founder">
+        <h2>Built by someone who lives here.</h2>
+        <p class="lead">
+          I'm James Cioni. I live on Lake Eufaula and built RevFirma because I understand what it means to run a business in a seasonal town — when your audience shows up, everything is on the line.
+        </p>
+        <p class="lead">
+          RevFirma isn't a Silicon Valley platform retrofitted for small towns. It's the opposite — built in a small town, for the places that national tech has never really served, and expanded outward from there.
+        </p>
+        <p class="founder-meta">
+          <a href="mailto:james@revfirma.com">james@revfirma.com</a> · <a href="tel:+19366613027">936-661-3027</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="alt">
+    <div class="container">
+      <div class="cta-block">
+        <h2>Claim a perimeter.</h2>
+        <p>Zones are category-exclusive and we only sell a fixed number of slots per city. If you're interested in a pilot for your town, your venue, or your community — reach out.</p>
+        <a href="mailto:james@revfirma.com?subject=RevFirma%20pilot%20inquiry&body=I'm%20interested%20in%20a%20RevFirma%20pilot.%0A%0ALocation%3A%0AUse%20case%3A%0A" class="btn">Request a pilot</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-row">
+      <div>© 2026 RevFirma · AI Sales, Inc.</div>
+      <div>
+        <a href="mailto:james@revfirma.com">james@revfirma.com</a> · <a href="tel:+19366613027">936-661-3027</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
