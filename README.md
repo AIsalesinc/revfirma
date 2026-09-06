@@ -12,6 +12,7 @@ The page includes:
 - A comparison of individual campaigns with the coordinated perimeter operating program.
 - Zone inquiries for Carlton Landing, Eufaula / Lake Eufaula and Downtown Tulsa.
 - Workforce protection, digital space ownership and customer protection paths.
+- A dedicated industrial sales section linking to the rig-board demo, with a matching inquiry objective.
 - Perimeter setup through activate.revfirma.com and a separate local network inquiry path.
 - An inquiry form connected to the existing RevFirma lead service, with validation and confirmation states.
 - Contact information, an inquiry privacy explanation and photography attribution.
