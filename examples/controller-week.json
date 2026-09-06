@@ -1,0 +1,85 @@
+{
+  "illustrative": true,
+  "timezone": "America/Chicago",
+  "scope": "One campaign, Facebook and Instagram Feed and Stories",
+  "goal_daily_frequency": 8,
+  "rows": [
+    {
+      "date": "2026-08-24",
+      "day": "Mon",
+      "impressions": 24000,
+      "reach": 3000,
+      "spend": 216,
+      "frequency": 8.0,
+      "cpm": 9.0,
+      "bid_cap_cpm": 14,
+      "daily_budget": 300
+    },
+    {
+      "date": "2026-08-25",
+      "day": "Tue",
+      "impressions": 21000,
+      "reach": 3000,
+      "spend": 210,
+      "frequency": 7.0,
+      "cpm": 10.0,
+      "bid_cap_cpm": 14,
+      "daily_budget": 300
+    },
+    {
+      "date": "2026-08-26",
+      "day": "Wed",
+      "impressions": 18000,
+      "reach": 3000,
+      "spend": 198,
+      "frequency": 6.0,
+      "cpm": 11.0,
+      "bid_cap_cpm": 14,
+      "daily_budget": 300
+    },
+    {
+      "date": "2026-08-27",
+      "day": "Thu",
+      "impressions": 24000,
+      "reach": 3200,
+      "spend": 240,
+      "frequency": 7.5,
+      "cpm": 10.0,
+      "bid_cap_cpm": 14,
+      "daily_budget": 300
+    },
+    {
+      "date": "2026-08-28",
+      "day": "Fri",
+      "impressions": 25200,
+      "reach": 3150,
+      "spend": 252,
+      "frequency": 8.0,
+      "cpm": 10.0,
+      "bid_cap_cpm": 14,
+      "daily_budget": 300
+    },
+    {
+      "date": "2026-08-29",
+      "day": "Sat",
+      "impressions": 25600,
+      "reach": 3200,
+      "spend": 256,
+      "frequency": 8.0,
+      "cpm": 10.0,
+      "bid_cap_cpm": 14,
+      "daily_budget": 300
+    },
+    {
+      "date": "2026-08-30",
+      "day": "Sun",
+      "impressions": 24800,
+      "reach": 3100,
+      "spend": 248,
+      "frequency": 8.0,
+      "cpm": 10.0,
+      "bid_cap_cpm": 14,
+      "daily_budget": 300
+    }
+  ]
+}

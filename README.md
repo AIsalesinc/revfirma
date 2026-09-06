@@ -1,25 +1,23 @@
-# RevFirma
+# RevFirma sales website
 
-The RevFirma customer website leads with **Your place. A managed advertising presence.** It explains who the program serves, what the customer receives, and the delivery, cost and decisions they can review.
+A static customer website for a managed advertising presence around workplaces, properties and operating areas. No build step is required.
 
-`index.html` is a complete page with inline CSS, JavaScript, brand artwork and licensed photography. Open it in a browser or serve it from a static website host. There is no build step.
+## Pages and assets
 
-The page includes:
+- `index.html`: opening offer, fixed illustrative controller week, jobs to be done, Carlton Landing measurement case, worked first-plan range, brief industrial lane, area inquiries and three essential FAQs.
+- `how-it-works/index.html`: delivery, frequency goals, auction-share limits, cost, competitor evidence, permissions and outcome measurement.
+- `sample-plan.pdf`: one-page illustrative commercial scope.
+- `case-studies/nabors-scalable-growth.pdf`: unchanged supplied Nabors case study, with its buyer alias preserved.
+- `examples/controller-week.csv` and `.json`: explicitly fictional readings used by the walkthrough.
 
-- A concise opening offer, a primary configuration CTA and a secondary link to working Carlton Landing reporting.
-- An interactive, keyboard-accessible controller immediately after the opening offer.
-- Case summaries for Nabors Industries, Carlton Landing and an anonymous Oklahoma City hotel, followed by five additional industrial summaries.
-- Source titles and measurement context beside expandable case summaries. Contract revenue, pipeline, traffic and delivery remain distinct; related cases are not aggregated.
-- A comparison of individual campaigns with a coordinated perimeter program.
-- Employer, customer, property and industrial advertising paths, including the rig-board demo.
-- A detailed Carlton Landing delivery example and zone inquiries for Carlton Landing, Eufaula / Lake Eufaula and Downtown Tulsa.
-- Perimeter configuration through activate.revfirma.com and a local network inquiry path.
-- The existing inquiry service with validation, confirmation states and production-only analytics.
+Publish the folder as static assets. The `/how-it-works/` directory serves its own index. No production deployment is implied by a review-branch commit.
 
-Google Fonts, the inquiry service and linked resources require internet access. Existing production analytics load only on `revfirma.com` and `www.revfirma.com`.
+The $1,200–$2,200 monthly planning example is calculated from the activation calculator rates retrieved September 6, 2026, for an illustrative 500-person planning audience. It separates media from the remaining service component and does not claim to describe typical customer spend. Creative counts and the one-business-day response target are proposed customer-facing operating scope for this review. No campaign or spend is created by this website update.
 
-The controller walkthrough is illustrative. Historical commercial results are attributed to the relevant RevFirma case study. They are not independently measured incremental ad revenue or promises for a new customer. The hotel example uses reported traffic; its modeled profit calculation is not presented as an observed result.
+The lead form uses the existing inquiry endpoint. Selections are shown in the form card and included in the inquiry; live lead submissions are not used for verification. Homepage analytics are restricted to the production domains. Matomo site 2 receives explicit trackEvent calls rather than relying on missing tag-manager event triggers; the Meta pageview and lead pixel are preserved. Fonts, inquiry handling and external resources require internet access.
 
-Customer source PDFs are not bundled into this repository. Buyer aliases and the private hotel’s anonymity are preserved. A quiet Tulsa photograph appears in the zones section; the cinematic hero overlay has been removed.
+The controller is a fictional week, separate from the smaller pricing example. Actual recorded spend, configured budget and authorized changes are distinct. The Nabors summary leads with campaign process and identifies historical contract revenue as reported in the source, not measured incremental advertising revenue. The private hotel remains anonymous.
 
-The photo is “Tulsa skyline aerial, April 2023” by Nils Huenerfuerst, CC BY-SA 4.0. Source, license and adaptation details are in the footer.
+The Tulsa photograph by Nils Huenerfuerst is licensed CC BY-SA 4.0; source and adaptation details remain in the homepage footer.
+
+The existing `/deployments/` address is included in the static build. `/clients` returned 404 and is not linked. The apex redirected to www during verification, matching the canonical metadata. Existing social and icon assets are included at their original root paths. Photography is a separate lazy-loaded image asset. The dark visual treatment is the deliberate redesign used in the preceding reviews. The dated Carlton snapshot lives in the guide, with a source CSV; the homepage directs readers to current reporting.
