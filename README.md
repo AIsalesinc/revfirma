@@ -1,24 +1,25 @@
 # RevFirma
 
-The RevFirma customer website leads with **You and your team. Someone else’s target.** and explains how a managed digital perimeter helps defend workforce and customer attention.
+The RevFirma customer website leads with **Your place. A managed advertising presence.** It explains who the program serves, what the customer receives, and the delivery, cost and decisions they can review.
 
-`index.html` is a complete page with inline CSS, JavaScript, brand artwork and licensed photography. Open the file in a browser, or serve it from a static website host. There is no build step.
+`index.html` is a complete page with inline CSS, JavaScript, brand artwork and licensed photography. Open it in a browser or serve it from a static website host. There is no build step.
 
 The page includes:
 
-- A dark visual system with cinematic geographic imagery, precise typography and responsive layouts.
-- An interactive, keyboard-accessible AI controller walkthrough.
-- A presence-focused Carlton Landing example with expandable dated delivery evidence.
-- A comparison of individual campaigns with the coordinated perimeter operating program.
-- Zone inquiries for Carlton Landing, Eufaula / Lake Eufaula and Downtown Tulsa.
-- Workforce protection, digital space ownership and customer protection paths.
-- A dedicated industrial sales section linking to the rig-board demo, with a matching inquiry objective.
-- Perimeter setup through activate.revfirma.com and a separate local network inquiry path.
-- An inquiry form connected to the existing RevFirma lead service, with validation and confirmation states.
-- Contact information, an inquiry privacy explanation and photography attribution.
+- A concise opening offer, a primary configuration CTA and a secondary link to working Carlton Landing reporting.
+- An interactive, keyboard-accessible controller immediately after the opening offer.
+- Case summaries for Nabors Industries, Carlton Landing and an anonymous Oklahoma City hotel, followed by five additional industrial summaries.
+- Source titles and measurement context beside expandable case summaries. Contract revenue, pipeline, traffic and delivery remain distinct; related cases are not aggregated.
+- A comparison of individual campaigns with a coordinated perimeter program.
+- Employer, customer, property and industrial advertising paths, including the rig-board demo.
+- A detailed Carlton Landing delivery example and zone inquiries for Carlton Landing, Eufaula / Lake Eufaula and Downtown Tulsa.
+- Perimeter configuration through activate.revfirma.com and a local network inquiry path.
+- The existing inquiry service with validation, confirmation states and production-only analytics.
 
-Google Fonts, the inquiry service and linked resources require internet access. The existing production analytics load only on `revfirma.com` and `www.revfirma.com`. Opening the HTML locally does not load those analytics.
+Google Fonts, the inquiry service and linked resources require internet access. Existing production analytics load only on `revfirma.com` and `www.revfirma.com`.
 
-The hero photo is “Tulsa skyline aerial, April 2023” by Nils Huenerfuerst, licensed under CC BY-SA 4.0. Source, license and adaptation details are included in the page footer.
+The controller walkthrough is illustrative. Historical commercial results are attributed to the relevant RevFirma case study. They are not independently measured incremental ad revenue or promises for a new customer. The hotel example uses reported traffic; its modeled profit calculation is not presented as an observed result.
 
-The controller walkthrough is illustrative. The dated delivery example distinguishes campaign impressions from estimated exposure on selected surfaces. These examples do not promise a specific result for a new customer.
+Customer source PDFs are not bundled into this repository. Buyer aliases and the private hotel’s anonymity are preserved. A quiet Tulsa photograph appears in the zones section; the cinematic hero overlay has been removed.
+
+The photo is “Tulsa skyline aerial, April 2023” by Nils Huenerfuerst, CC BY-SA 4.0. Source, license and adaptation details are in the footer.
