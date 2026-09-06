@@ -6,10 +6,11 @@ The RevFirma customer website leads with **Protect your audience** and explains 
 
 The page includes:
 
-- Responsive navigation and layouts.
+- A dark visual system with cinematic geographic imagery, precise typography and responsive layouts.
 - An interactive, keyboard-accessible AI controller walkthrough.
 - A dated Carlton Landing delivery example and links to its public dashboard.
-- Perimeter and local network offers.
+- Workforce protection, digital space ownership and customer protection paths.
+- Perimeter setup through activate.revfirma.com and a separate local network inquiry path.
 - An inquiry form connected to the existing RevFirma lead service, with validation and confirmation states.
 - Contact information, an inquiry privacy explanation and photography attribution.
 
