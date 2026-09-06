@@ -1,6 +1,6 @@
 # RevFirma
 
-The RevFirma customer website leads with **Protect your audience** and explains the managed defensive geofencing offer.
+The RevFirma customer website leads with **You and your team. Someone else’s target.** and explains how a managed digital perimeter helps defend workforce and customer attention.
 
 `index.html` is a complete page with inline CSS, JavaScript, brand artwork and licensed photography. Open the file in a browser, or serve it from a static website host. There is no build step.
 
@@ -8,7 +8,9 @@ The page includes:
 
 - A dark visual system with cinematic geographic imagery, precise typography and responsive layouts.
 - An interactive, keyboard-accessible AI controller walkthrough.
-- A dated Carlton Landing delivery example and links to its public dashboard.
+- A presence-focused Carlton Landing example with expandable dated delivery evidence.
+- A comparison of individual campaigns with the coordinated perimeter operating program.
+- Zone inquiries for Carlton Landing, Eufaula / Lake Eufaula and Downtown Tulsa.
 - Workforce protection, digital space ownership and customer protection paths.
 - Perimeter setup through activate.revfirma.com and a separate local network inquiry path.
 - An inquiry form connected to the existing RevFirma lead service, with validation and confirmation states.
