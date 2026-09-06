@@ -1,47 +1,20 @@
 # RevFirma
 
-**Control all digital attention inside real-world locations.**
+The RevFirma customer website leads with **Protect your audience** and explains the managed defensive geofencing offer.
 
-RevFirma turns any bounded physical space — a town, a campus, a venue, a neighborhood — into a managed digital perimeter. Inside that perimeter, you decide what gets seen, what gets pushed, and what gets measured.
+`index.html` is a complete page with inline CSS, JavaScript, brand artwork and licensed photography. Open the file in a browser, or serve it from a static website host. There is no build step.
 
-[revfirma.com](https://revfirma.com)
+The page includes:
 
----
+- Responsive navigation and layouts.
+- An interactive, keyboard-accessible AI controller walkthrough.
+- A dated Carlton Landing delivery example and links to its public dashboard.
+- Perimeter and local network offers.
+- An inquiry form connected to the existing RevFirma lead service, with validation and confirmation states.
+- Contact information, an inquiry privacy explanation and photography attribution.
 
-## The problem
+Google Fonts, the inquiry service and linked resources require internet access. The existing production analytics load only on `revfirma.com` and `www.revfirma.com`. Opening the HTML locally does not load those analytics.
 
-Physical places are crawling with digital attention — phones in every pocket, notifications, feeds, ads — but nobody *inside the perimeter* controls it. Local businesses, community governance, event operators, and venue owners have zero leverage over what the people in their space actually see and do.
+The hero photo is “Tulsa skyline aerial, April 2023” by Nils Huenerfuerst, licensed under CC BY-SA 4.0. Source, license and adaptation details are included in the page footer.
 
-## What RevFirma does
-
-RevFirma is the operating layer for that attention:
-
-- **Perimeter definition** — draw a geofence or bind to a network and get a programmable boundary.
-- **Content control** — publish information, offers, alerts, and experiences that only land inside.
-- **Attention capture** — the moment a device crosses the boundary, it becomes addressable.
-- **Measurement** — see who's inside, what they engaged with, and what it drove.
-
-## Who it's for
-
-- Planned communities and HOAs running their own digital presence
-- Venues, resorts, and campuses with captive audiences
-- Local governments and tourism boards
-- Event operators who need to own the in-venue experience
-
-## Pilots
-
-- **Carlton Landing, OK** — planned community hub: news, events, dining, governance.
-- **Eufaula, OK** — municipal-scale perimeter deployment.
-
-## Status
-
-Early traction. Live in two Oklahoma communities. Applied to [a16z Speedrun](https://a16z.com/speedrun/), Spring 2026.
-
-## Team
-
-- **James Cioni** — founder.
-
-## Contact
-
-- hello@revfirma.com
-- [revfirma.com](https://revfirma.com)
+The controller walkthrough is illustrative. The dated delivery example distinguishes campaign impressions from estimated exposure on selected surfaces. These examples do not promise a specific result for a new customer.
