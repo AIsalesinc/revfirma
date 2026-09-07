@@ -25,3 +25,5 @@ The existing `/deployments/` address is included in the static build. `/clients`
 ## Image-led edition
 
 The homepage now opens with an original conceptual city visualization, followed immediately by the interactive controller. The Tulsa photograph is displayed across the page. Headline and use-case copy are shorter. Entrance and scroll motion respect reduced-motion preferences. The city illustration is conceptual artwork, not a measured coverage map. The new web-optimized image is `assets/city-presence.webp`. No campaign controls or spend were changed.
+
+The product walkthrough now animates the selected place, illustrative Feed and Stories ads, delivery, paid cost, recommendation, creative approval and next-day review. Playback runs once when the scene enters view, pauses when it leaves view or the document is hidden, and yields to manual controller tabs. Play, pause, replay and step controls are provided. Reduced-motion preferences disable automatic start and visual transitions. All tour behavior is local and never invokes advertising APIs.
