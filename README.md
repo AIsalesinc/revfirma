@@ -39,3 +39,10 @@ Applied homepage clarity and form-usability principles from NN/g (https://www.nn
 - Custom areas receive separately scoped proposals. The older sample-plan.pdf remains an archived example, no longer linked from the homepage or measurement guide.
 - Four required fields in a single column; optional details collapsed; plan and area selections remain visibly summarized. Inquiry does not authorize launch.
 - Source-level and mocked behavior checks only. No real leads submitted, no advertising changed, no production deployment. Conversion improvement requires measurement after an approved launch; no conversion-rate claim is made.
+
+
+## v13 positioning correction
+
+Protection of digital space is the central proposition. The hero uses the founder’s audience framing, leads with “Take back your digital space,” and starts a protection-plan inquiry. The controller immediately explains the operating mechanism. Existing customer, workforce and community use cases support that one proposition. Tulsa pricing remains a specific purchasing option farther down the page.
+
+This is a focused copy and typography update. Imagery, animation, campaign examples, source evidence, prices, no-launch inquiry behavior and advertising controls are preserved. No new imagery, dependencies, tracking, form submissions or Meta changes.
