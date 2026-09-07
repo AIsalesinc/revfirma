@@ -1,47 +1,48 @@
-# RevFirma
+# RevFirma sales website
 
-**Control all digital attention inside real-world locations.**
+A static customer website for RevFirma’s managed location-based advertising around workplaces, properties and operating areas. No build step is required.
 
-RevFirma turns any bounded physical space — a town, a campus, a venue, a neighborhood — into a managed digital perimeter. Inside that perimeter, you decide what gets seen, what gets pushed, and what gets measured.
+## Pages and assets
 
-[revfirma.com](https://revfirma.com)
+- `index.html`: “Be the business they keep seeing” sales opening, interactive controller in the hero, three customer use cases, controller advantages, city and industrial evidence, area directory, pricing example and inquiry form.
+- `how-it-works/index.html`: delivery, frequency goals, auction-share limits, cost, competitor evidence, permissions and outcome measurement.
+- `sample-plan.pdf`: one-page illustrative commercial scope.
+- `case-studies/nabors-scalable-growth.pdf`: unchanged supplied Nabors case study, with its buyer alias preserved.
+- `examples/controller-week.csv` and `.json`: explicitly fictional readings used by the walkthrough.
 
----
+Publish the folder as static assets. The `/how-it-works/` directory serves its own index. No production deployment is implied by a review-branch commit.
 
-## The problem
+The $1,200–$2,200 monthly planning example is calculated from the activation calculator rates retrieved September 6, 2026, for an illustrative 500-person planning audience. It separates media from the remaining service component and does not claim to describe typical customer spend. Creative counts and the one-business-day response target are proposed customer-facing operating scope for this review. No campaign or spend is created by this website update.
 
-Physical places are crawling with digital attention — phones in every pocket, notifications, feeds, ads — but nobody *inside the perimeter* controls it. Local businesses, community governance, event operators, and venue owners have zero leverage over what the people in their space actually see and do.
+The lead form uses the existing inquiry endpoint. Selections are shown in the form card and included in the inquiry; live lead submissions are not used for verification. Homepage analytics are restricted to the production domains. Matomo site 2 receives explicit trackEvent calls rather than relying on missing tag-manager event triggers; the Meta pageview and lead pixel are preserved. Fonts, inquiry handling and external resources require internet access.
 
-## What RevFirma does
+The controller is a fictional week, separate from the smaller pricing example. Actual recorded spend, configured budget and authorized changes are distinct. The Nabors summary leads with campaign process and identifies historical contract revenue as reported in the source, not measured incremental advertising revenue. The hospitality traffic example is omitted from the homepage to keep its proof focused. Private source material is not included in the public assets.
 
-RevFirma is the operating layer for that attention:
+The Tulsa photograph by Nils Huenerfuerst is licensed CC BY-SA 4.0; source and adaptation details remain in the homepage footer.
 
-- **Perimeter definition** — draw a geofence or bind to a network and get a programmable boundary.
-- **Content control** — publish information, offers, alerts, and experiences that only land inside.
-- **Attention capture** — the moment a device crosses the boundary, it becomes addressable.
-- **Measurement** — see who's inside, what they engaged with, and what it drove.
+The existing `/deployments/` address is included in the static build. `/clients` returned 404 and is not linked. The apex redirected to www during verification, matching the canonical metadata. Existing social and icon assets are included at their original root paths. Photography is a separate lazy-loaded image asset. The redesign combines a dark product opening, white editorial sections and brand cyan with Inter and JetBrains Mono. The headline sells repeated visibility; the controller shows delivery, paid cost, authorization and next-day readings. Carlton Landing is explicitly described as a city in Oklahoma. Its dated 17.4 modeled exposure example links to the archived source and current reporting. No supported auction-share percentage is claimed. Supporting pages share the same typography and visual theme.
 
-## Who it's for
+## Image-led edition
 
-- Planned communities and HOAs running their own digital presence
-- Venues, resorts, and campuses with captive audiences
-- Local governments and tourism boards
-- Event operators who need to own the in-venue experience
+The homepage now opens with an original conceptual city visualization, followed immediately by the interactive controller. The Tulsa photograph is displayed across the page. Headline and use-case copy are shorter. Entrance and scroll motion respect reduced-motion preferences. The city illustration is conceptual artwork, not a measured coverage map. The new web-optimized image is `assets/city-presence.webp`. No campaign controls or spend were changed.
 
-## Pilots
+The product walkthrough now animates the selected place, illustrative Feed and Stories ads, delivery, paid cost, recommendation, creative approval and next-day review. Playback runs once when the scene enters view, pauses when it leaves view or the document is hidden, and yields to manual controller tabs. Play, pause, replay and step controls are provided. Reduced-motion preferences disable automatic start and visual transitions. All tour behavior is local and never invokes advertising APIs.
 
-- **Carlton Landing, OK** — planned community hub: news, events, dining, governance.
-- **Eufaula, OK** — municipal-scale perimeter deployment.
 
-## Status
+## v12 sales-flow review, September 7, 2026
 
-Early traction. Live in two Oklahoma communities. Applied to [a16z Speedrun](https://a16z.com/speedrun/), Spring 2026.
+Applied homepage clarity and form-usability principles from NN/g (https://www.nngroup.com/articles/top-ten-guidelines-for-homepage-usability/) and Baymard (https://baymard.com/learn/form-design/). Baymard findings concern ecommerce forms; their application to this inquiry form is a design judgment, not a measured conversion uplift.
 
-## Team
+- Plain-language managed advertising offer in the hero; image-led design and accessible animated controller retained.
+- Header, hero and mobile primary CTAs now request a plan through the same inquiry flow.
+- Removed the small custom calculator example from homepage pricing. Tulsa Presence / Priority / Founding Partner are $3,000 / $5,000 / $10,000 per month, all 12-month positions, media included, verified against https://tulsa.revfirma.com/ on September 7. Frequency is a planning target; exclusivity is limited to managed inventory.
+- Custom areas receive separately scoped proposals. The older sample-plan.pdf remains an archived example, no longer linked from the homepage or measurement guide.
+- Four required fields in a single column; optional details collapsed; plan and area selections remain visibly summarized. Inquiry does not authorize launch.
+- Source-level and mocked behavior checks only. No real leads submitted, no advertising changed, no production deployment. Conversion improvement requires measurement after an approved launch; no conversion-rate claim is made.
 
-- **James Cioni** — founder.
 
-## Contact
+## v13 positioning correction
 
-- hello@revfirma.com
-- [revfirma.com](https://revfirma.com)
+Protection of digital space is the central proposition. The hero uses the founder’s audience framing, leads with “Take back your digital space,” and starts a protection-plan inquiry. The controller immediately explains the operating mechanism. Existing customer, workforce and community use cases support that one proposition. Tulsa pricing remains a specific purchasing option farther down the page.
+
+This is a focused copy and typography update. Imagery, animation, campaign examples, source evidence, prices, no-launch inquiry behavior and advertising controls are preserved. No new imagery, dependencies, tracking, form submissions or Meta changes.

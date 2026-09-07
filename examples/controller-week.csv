@@ -1,0 +1,8 @@
+illustrative,timezone,date,day,impressions,reach,spend,frequency,cpm,bid_cap_cpm,daily_budget
+true,America/Chicago,2026-08-24,Mon,24000,3000,216,8.0,9.0,14,300
+true,America/Chicago,2026-08-25,Tue,21000,3000,210,7.0,10.0,14,300
+true,America/Chicago,2026-08-26,Wed,18000,3000,198,6.0,11.0,14,300
+true,America/Chicago,2026-08-27,Thu,24000,3200,240,7.5,10.0,14,300
+true,America/Chicago,2026-08-28,Fri,25200,3150,252,8.0,10.0,14,300
+true,America/Chicago,2026-08-29,Sat,25600,3200,256,8.0,10.0,14,300
+true,America/Chicago,2026-08-30,Sun,24800,3100,248,8.0,10.0,14,300
