@@ -21,3 +21,7 @@ The controller is a fictional week, separate from the smaller pricing example. A
 The Tulsa photograph by Nils Huenerfuerst is licensed CC BY-SA 4.0; source and adaptation details remain in the homepage footer.
 
 The existing `/deployments/` address is included in the static build. `/clients` returned 404 and is not linked. The apex redirected to www during verification, matching the canonical metadata. Existing social and icon assets are included at their original root paths. Photography is a separate lazy-loaded image asset. The redesign combines a dark product opening, white editorial sections and brand cyan with Inter and JetBrains Mono. The headline sells repeated visibility; the controller shows delivery, paid cost, authorization and next-day readings. Carlton Landing is explicitly described as a city in Oklahoma. Its dated 17.4 modeled exposure example links to the archived source and current reporting. No supported auction-share percentage is claimed. Supporting pages share the same typography and visual theme.
+
+## Image-led edition
+
+The homepage now opens with an original conceptual city visualization, followed immediately by the interactive controller. The Tulsa photograph is displayed across the page. Headline and use-case copy are shorter. Entrance and scroll motion respect reduced-motion preferences. The city illustration is conceptual artwork, not a measured coverage map. The new web-optimized image is `assets/city-presence.webp`. No campaign controls or spend were changed.
