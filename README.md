@@ -27,3 +27,15 @@ The existing `/deployments/` address is included in the static build. `/clients`
 The homepage now opens with an original conceptual city visualization, followed immediately by the interactive controller. The Tulsa photograph is displayed across the page. Headline and use-case copy are shorter. Entrance and scroll motion respect reduced-motion preferences. The city illustration is conceptual artwork, not a measured coverage map. The new web-optimized image is `assets/city-presence.webp`. No campaign controls or spend were changed.
 
 The product walkthrough now animates the selected place, illustrative Feed and Stories ads, delivery, paid cost, recommendation, creative approval and next-day review. Playback runs once when the scene enters view, pauses when it leaves view or the document is hidden, and yields to manual controller tabs. Play, pause, replay and step controls are provided. Reduced-motion preferences disable automatic start and visual transitions. All tour behavior is local and never invokes advertising APIs.
+
+
+## v12 sales-flow review, September 7, 2026
+
+Applied homepage clarity and form-usability principles from NN/g (https://www.nngroup.com/articles/top-ten-guidelines-for-homepage-usability/) and Baymard (https://baymard.com/learn/form-design/). Baymard findings concern ecommerce forms; their application to this inquiry form is a design judgment, not a measured conversion uplift.
+
+- Plain-language managed advertising offer in the hero; image-led design and accessible animated controller retained.
+- Header, hero and mobile primary CTAs now request a plan through the same inquiry flow.
+- Removed the small custom calculator example from homepage pricing. Tulsa Presence / Priority / Founding Partner are $3,000 / $5,000 / $10,000 per month, all 12-month positions, media included, verified against https://tulsa.revfirma.com/ on September 7. Frequency is a planning target; exclusivity is limited to managed inventory.
+- Custom areas receive separately scoped proposals. The older sample-plan.pdf remains an archived example, no longer linked from the homepage or measurement guide.
+- Four required fields in a single column; optional details collapsed; plan and area selections remain visibly summarized. Inquiry does not authorize launch.
+- Source-level and mocked behavior checks only. No real leads submitted, no advertising changed, no production deployment. Conversion improvement requires measurement after an approved launch; no conversion-rate claim is made.
